@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CK Studio</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- ===================== -->
+<!-- SIDEBAR -->
+<!-- ===================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2>🎬 CK Studio</h2>
+
+<p>AI Drama Production Suite</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li class="active">
+<a href="index.html">🏠 Dashboard</a>
+</li>
+
+<li>
+<a href="pages/project.html">📁 Project</a>
+</li>
+
+<li>
+<a href="pages/character.html">👤 Character</a>
+</li>
+
+<li>
+<a href="pages/scene.html">🎬 Scene</a>
+</li>
+
+<li>
+<a href="pages/episode.html">📺 Episode</a>
+</li>
+
+<li>
+<a href="pages/prompt.html">✨ Prompt</a>
+</li>
+
+<li>
+<a href="pages/storyboard.html">🖼 Storyboard</a>
+</li>
+
+<li>
+<a href="pages/export.html">📦 Export</a>
+</li>
+
+<li>
+<a href="pages/settings.html">⚙ Settings</a>
+</li>
+
+</ul>
+
+</nav>
+
+</aside>
+
+<!-- ===================== -->
+<!-- MAIN -->
+<!-- ===================== -->
+
+<main class="main">
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div>
+
+<h1>Dashboard</h1>
+
+<p>Selamat datang di CK Studio</p>
+
+</div>
+
+<button id="newProject">
+
++ New Project
+
+</button>
+
+</header>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h3>Total Project</h3>
+
+<h2 id="totalProject">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Total Character</h3>
+
+<h2 id="totalCharacter">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Total Episode</h3>
+
+<h2 id="totalEpisode">0</h2>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Total Scene</h3>
+
+<h2 id="totalScene">0</h2>
+
+</div>
+
+</section>
+
+<!-- CONTENT -->
+
+<section class="dashboard-grid">
+
+<!-- PROJECT -->
+
+<div class="panel">
+
+<div class="panel-header">
+
+<h2>📁 Project</h2>
+
+<button>Lihat Semua</button>
+
+</div>
+
+<div id="projectList">
+
+<div class="empty">
+
+Belum ada Project
+
+</div>
+
+</div>
+
+</div>
+
+<!-- QUICK -->
+
+<div class="panel">
+
+<div class="panel-header">
+
+<h2>⚡ Quick Access</h2>
+
+</div>
+
+<div class="quick-grid">
+
+<a href="pages/character.html" class="quick-card">
+
+👤
+
+<span>Character</span>
+
+</a>
+
+<a href="pages/scene.html" class="quick-card">
+
+🎬
+
+<span>Scene</span>
+
+</a>
+
+<a href="pages/episode.html" class="quick-card">
+
+📺
+
+<span>Episode</span>
+
+</a>
+
+<a href="pages/prompt.html" class="quick-card">
+
+✨
+
+<span>Prompt</span>
+
+</a>
+
+<a href="pages/storyboard.html" class="quick-card">
+
+🖼
+
+<span>Storyboard</span>
+
+</a>
+
+<a href="pages/export.html" class="quick-card">
+
+📦
+
+<span>Export</span>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RECENT -->
+
+<section class="panel">
+
+<div class="panel-header">
+
+<h2>🕒 Aktivitas Terakhir</h2>
+
+</div>
+
+<ul class="activity">
+
+<li>Belum ada aktivitas.</li>
+
+</ul>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
