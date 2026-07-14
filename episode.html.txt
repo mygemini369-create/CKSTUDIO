@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Episode Builder</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2>🎬 CK Studio</h2>
+
+<p>AI Drama Production Suite</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="../index.html">🏠 Dashboard</a></li>
+<li><a href="character.html">👤 Character</a></li>
+<li><a href="scene.html">🎬 Scene</a></li>
+<li class="active"><a href="episode.html">📺 Episode</a></li>
+<li><a href="prompt.html">✨ Prompt</a></li>
+<li><a href="storyboard.html">🖼 Storyboard</a></li>
+
+</ul>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<h1>📺 Episode Builder</h1>
+
+<p>Kelola seluruh scene dalam satu episode</p>
+
+</div>
+
+</header>
+
+<div class="dashboard-grid">
+
+<!-- LEFT -->
+
+<div class="panel">
+
+<h2>Episode</h2>
+
+<input id="episodeTitle" placeholder="Judul Episode">
+
+<textarea id="episodeSynopsis" placeholder="Sinopsis Episode"></textarea>
+
+<div class="project-button">
+
+<button onclick="saveEpisode()">
+
+💾 Simpan Episode
+
+</button>
+
+<button onclick="newEpisode()">
+
+➕ Baru
+
+</button>
+
+</div>
+
+<hr style="margin:20px 0;">
+
+<h2>Daftar Scene</h2>
+
+<div id="sceneList">
+
+<p class="empty">
+
+Belum ada scene.
+
+</p>
+
+</div>
+
+<button class="btn" onclick="addScene()">
+
++ Tambah Scene
+
+</button>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="panel">
+
+<h2>Scene Editor</h2>
+
+<input id="sceneTitle" placeholder="Judul Scene">
+
+<textarea id="sceneDesc" placeholder="Deskripsi Scene"></textarea>
+
+<div class="project-button">
+
+<button onclick="saveScene()">
+
+💾 Simpan Scene
+
+</button>
+
+<button onclick="openSceneBuilder()">
+
+🎬 Buka Scene Builder
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/episode.js"></script>
+
+</body>
+
+</html>

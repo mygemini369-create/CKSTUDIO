@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Character Manager</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2>🎬 CK Studio</h2>
+
+<p>AI Drama Production Suite</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="../index.html">🏠 Dashboard</a></li>
+<li class="active"><a href="character.html">👤 Character</a></li>
+<li><a href="scene.html">🎬 Scene</a></li>
+<li><a href="episode.html">📺 Episode</a></li>
+<li><a href="prompt.html">✨ Prompt</a></li>
+<li><a href="storyboard.html">🖼 Storyboard</a></li>
+
+</ul>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<h1>Character Manager</h1>
+
+<p>Kelola seluruh karakter project</p>
+
+</div>
+
+</header>
+
+<div class="dashboard-grid">
+
+<!-- LIBRARY -->
+
+<div class="panel">
+
+<h2>Character Library</h2>
+
+<input
+type="text"
+id="search"
+placeholder="Cari karakter...">
+
+<div id="characterList">
+
+<p class="empty">
+Belum ada karakter.
+</p>
+
+</div>
+
+<button class="btn" id="newCharacter">
+
++ Character Baru
+
+</button>
+
+</div>
+
+<!-- EDITOR -->
+
+<div class="panel">
+
+<h2>Character Editor</h2>
+
+<input id="nama" placeholder="Nama">
+
+<input id="umur" placeholder="Umur">
+
+<input id="asal" placeholder="Asal / Etnis">
+
+<input id="pekerjaan" placeholder="Pekerjaan">
+
+<textarea id="fisik" placeholder="Ciri Fisik"></textarea>
+
+<textarea id="kepribadian" placeholder="Kepribadian"></textarea>
+
+<textarea id="background" placeholder="Background"></textarea>
+
+<textarea id="dna" placeholder="MASTER CHARACTER DNA" readonly></textarea>
+
+<div class="project-button">
+
+<button onclick="generateDNA()">
+
+Generate DNA
+
+</button>
+
+<button onclick="saveCharacter()">
+
+Simpan
+
+</button>
+
+<button onclick="deleteCharacter()">
+
+Hapus
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/character.js"></script>
+
+</body>
+
+</html>

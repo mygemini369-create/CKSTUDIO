@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Scene Builder</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2>🎬 CK Studio</h2>
+
+<p>AI Drama Production Suite</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="../index.html">🏠 Dashboard</a></li>
+<li><a href="character.html">👤 Character</a></li>
+<li class="active"><a href="scene.html">🎬 Scene</a></li>
+<li><a href="episode.html">📺 Episode</a></li>
+<li><a href="prompt.html">✨ Prompt</a></li>
+<li><a href="storyboard.html">🖼 Storyboard</a></li>
+
+</ul>
+
+</nav>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main">
+
+<header class="header">
+
+<div>
+
+<h1>🎬 Scene Builder</h1>
+
+<p>Buat prompt scene AI</p>
+
+</div>
+
+</header>
+
+<div class="dashboard-grid">
+
+<!-- FORM -->
+
+<div class="panel">
+
+<h2>Scene Information</h2>
+
+<select id="characterSelect">
+<option value="">-- Pilih Character --</option>
+</select>
+
+<input id="judul" placeholder="Judul Scene">
+
+<input id="lokasi" placeholder="Lokasi">
+
+<input id="waktu" placeholder="Waktu">
+
+<input id="cuaca" placeholder="Cuaca">
+
+<input id="mood" placeholder="Mood">
+
+<textarea id="aksi" placeholder="Aksi Karakter"></textarea>
+
+<textarea id="dialog" placeholder="Dialog"></textarea>
+
+<input id="kamera" placeholder="Camera Movement">
+
+<input id="lighting" placeholder="Lighting">
+
+<input id="sound" placeholder="Ambient Sound">
+
+<div class="project-button">
+
+<button onclick="generateScene()">
+
+Generate Prompt
+
+</button>
+
+<button onclick="copyPrompt()">
+
+Copy
+
+</button>
+
+</div>
+
+</div>
+
+<!-- OUTPUT -->
+
+<div class="panel">
+
+<h2>Scene Prompt</h2>
+
+<textarea id="scenePrompt" style="height:650px;" readonly></textarea>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="../js/scene.js"></script>
+
+</body>
+
+</html>
